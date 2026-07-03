@@ -1,0 +1,496 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NoviumNodes | High-Performance Team Portfolio</title>
+    <!-- Preloading display fonts for instant visual rendering -->
+    <link rel="stylesheet" href="/style.css">
+    <script type="module" src="/script.js" defer></script>
+  </head>
+  <body>
+    <!-- Ambient Background Grids and Glows -->
+    <div class="background-grid"></div>
+    <div class="background-glow"></div>
+
+    <!-- Premium Header/Navbar -->
+    <header class="header">
+      <div class="nav-container">
+        <a href="#hero" class="logo">
+          <span>NoviumNodes</span>
+          <div class="logo-dot"></div>
+        </a>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#projects" class="nav-link">Core Projects</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+        <button class="menu-btn" id="menuBtn" aria-label="Toggle Navigation Menu">
+          <span class="menu-btn-box">
+            <span class="menu-btn-inner"></span>
+          </span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Mobile Slide-down Navigation -->
+    <div class="mobile-nav" id="mobileNav">
+      <ul class="mobile-nav-links">
+        <li><a href="#about" class="mobile-nav-link">About</a></li>
+        <li><a href="#projects" class="mobile-nav-link">Core Projects</a></li>
+        <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+      </ul>
+    </div>
+
+    <main>
+      <!-- Hero Section -->
+      <section id="hero" class="hero">
+        <div class="hero-container">
+          <div class="hero-badge">
+            <span class="hero-badge-pulse"></span>
+            DECENTRALIZED CORE SYSTEMS
+          </div>
+          <h1 class="hero-title">
+            Engineering the Future of <span>High-Performance</span> Node Architectures.
+          </h1>
+          <p class="hero-description">
+            We build sub-millisecond distributed consensus protocols, ultra-low latency state machines, and reactive API gateways designed for next-generation systems.
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">
+              Explore Our Work
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat-item">
+              <span class="stat-val">&lt;0.4ms</span>
+              <span class="stat-label">Block Finality</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-val">99.999%</span>
+              <span class="stat-label">System Uptime</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-val">2.4M+</span>
+              <span class="stat-label">Peer-to-Peer Tx/s</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="section">
+        <div class="section-header">
+          <span class="section-label">01 // CORE PHILOSOPHY</span>
+          <h2 class="section-title">Uncompromising Engineering Mindset</h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-content">
+            <p class="about-lead">
+              We design software not just to solve problems, but to push the limits of modern compute hardware. 
+            </p>
+            <p class="about-text">
+              At NoviumNodes, our mission is to eliminate latency bottlenecking entirely. By utilizing system-level programming, lock-free concurrent memory allocation, and zero-copy packet tracing, our custom network kernels outperform legacy architectures by orders of magnitude. We design core protocol layers that scale gracefully and maintain strict safety boundaries under heavy loads.
+            </p>
+            <p class="about-text">
+              Whether building custom cryptographic modules, compiling lightning-fast WebAssembly modules, or optimizing eBPF network hooks, our solutions guarantee performance at scale.
+            </p>
+          </div>
+          <div class="about-features">
+            <!-- Feature Card 1 -->
+            <div class="feature-card">
+              <div class="feature-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                  <polyline points="2 17 12 22 22 17"></polyline>
+                  <polyline points="2 12 12 17 22 12"></polyline>
+                </svg>
+              </div>
+              <h3 class="feature-title">Distributed Architecture</h3>
+              <p class="feature-desc">Byzantine fault-tolerant clusters engineered for zero-point failure resistance.</p>
+            </div>
+            <!-- Feature Card 2 -->
+            <div class="feature-card">
+              <div class="feature-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                </svg>
+              </div>
+              <h3 class="feature-title">Sub-Millisecond Speed</h3>
+              <p class="feature-desc">Microsecond-level transaction execution pipelines using C++ and Rust.</p>
+            </div>
+            <!-- Feature Card 3 -->
+            <div class="feature-card">
+              <div class="feature-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                  <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                </svg>
+              </div>
+              <h3 class="feature-title">Security First</h3>
+              <p class="feature-desc">Mathematically verified smart logic sandboxes and strict cryptographical bounds.</p>
+            </div>
+            <!-- Feature Card 4 -->
+            <div class="feature-card">
+              <div class="feature-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"></path>
+                </svg>
+              </div>
+              <h3 class="feature-title">Adaptive Scaling</h3>
+              <p class="feature-desc">Dynamic load redistribution models that adapt automatically to network storms.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Core Projects Grid -->
+      <section id="projects" class="section">
+        <div class="section-header">
+          <span class="section-label">02 // CORE DEVELOPMENT</span>
+          <h2 class="section-title">High-Performance Work</h2>
+        </div>
+        <div class="projects-container">
+          <!-- Main Core Projects Grid (Exactly 3) -->
+          <div class="projects-grid">
+            <!-- Project Card Alpha -->
+            <article class="project-card">
+              <div class="project-card-header">
+                <div class="project-icon-wrapper">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="16 18 22 12 16 6"></polyline>
+                    <polyline points="8 6 2 12 8 18"></polyline>
+                  </svg>
+                </div>
+                <div class="project-meta">ACTIVE // 01</div>
+              </div>
+              <div class="project-body">
+                <h3 class="project-title">Project Alpha</h3>
+                <p class="project-desc">A custom-built Paxos-style distributed consensus protocol designed for multi-region node validation, keeping finalization thresholds under 0.4 milliseconds.</p>
+                <div class="project-tags">
+                  <span class="project-tag">Rust</span>
+                  <span class="project-tag">WebAssembly</span>
+                  <span class="project-tag">Consensus</span>
+                  <span class="project-tag">Raft</span>
+                </div>
+              </div>
+              <div class="project-footer">
+                <a href="#" class="project-link" onclick="event.preventDefault();">
+                  View Blueprint
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </a>
+              </div>
+            </article>
+
+            <!-- Project Card Beta -->
+            <article class="project-card">
+              <div class="project-card-header">
+                <div class="project-icon-wrapper">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                    <path d="M3 5V19A9 3 0 0 0 21 19V5"></path>
+                    <path d="M3 12A9 3 0 0 0 21 12"></path>
+                  </svg>
+                </div>
+                <div class="project-meta">STABLE // 02</div>
+              </div>
+              <div class="project-body">
+                <h3 class="project-title">Project Beta</h3>
+                <p class="project-desc">A highly-replicated persistent memory storage layer utilizing zero-copy synchronization maps, optimizing memory management across massive bare-metal stacks.</p>
+                <div class="project-tags">
+                  <span class="project-tag">C++23</span>
+                  <span class="project-tag">gRPC</span>
+                  <span class="project-tag">Zero-Copy</span>
+                  <span class="project-tag">RocksDB</span>
+                </div>
+              </div>
+              <div class="project-footer">
+                <a href="#" class="project-link" onclick="event.preventDefault();">
+                  View Blueprint
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </a>
+              </div>
+            </article>
+
+            <!-- Project Card Gamma -->
+            <article class="project-card">
+              <div class="project-card-header">
+                <div class="project-icon-wrapper">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <line x1="2" y1="12" x2="22" y2="12"></line>
+                    <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                  </svg>
+                </div>
+                <div class="project-meta">PERFORMANCE // 03</div>
+              </div>
+              <div class="project-body">
+                <h3 class="project-title">Project Gamma</h3>
+                <p class="project-desc">An asynchronous Layer-7 gateway and routing proxy built with modern Linux epoll APIs, executing secure traffic decryption in under 20 microseconds.</p>
+                <div class="project-tags">
+                  <span class="project-tag">Go</span>
+                  <span class="project-tag">eBPF</span>
+                  <span class="project-tag">L7 Proxy</span>
+                  <span class="project-tag">gRPC</span>
+                </div>
+              </div>
+              <div class="project-footer">
+                <a href="#" class="project-link" onclick="event.preventDefault();">
+                  View Blueprint
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </a>
+              </div>
+            </article>
+          </div>
+
+          <!-- Jump to Gallery Action Trigger Element -->
+          <div class="gallery-trigger-wrapper">
+            <div class="gallery-line-decor"></div>
+            <button class="btn-trigger" id="jumpGalleryBtn">
+              Jump to Gallery
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+          </div>
+
+          <!-- Hidden Gallery Grid containing remaining projects (Exactly 3) -->
+          <div class="hidden-gallery" id="hiddenGallery">
+            <div class="projects-grid">
+              <!-- Project Card Delta -->
+              <article class="project-card">
+                <div class="project-card-header">
+                  <div class="project-icon-wrapper">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                      <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                    </svg>
+                  </div>
+                  <div class="project-meta">SECURITY // 04</div>
+                </div>
+                <div class="project-body">
+                  <h3 class="project-title">Project Delta</h3>
+                  <p class="project-desc">A modular post-quantum cryptography suite integrating mathematical security barriers directly inside critical system-level network transport sockets.</p>
+                  <div class="project-tags">
+                    <span class="project-tag">Rust</span>
+                    <span class="project-tag">Lattice</span>
+                    <span class="project-tag">Security</span>
+                    <span class="project-tag">TLS</span>
+                  </div>
+                </div>
+                <div class="project-footer">
+                  <a href="#" class="project-link" onclick="event.preventDefault();">
+                    View Blueprint
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <line x1="5" y1="12" x2="19" y2="12"></line>
+                      <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                  </a>
+                </div>
+              </article>
+
+              <!-- Project Card Epsilon -->
+              <article class="project-card">
+                <div class="project-card-header">
+                  <div class="project-icon-wrapper">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                      <line x1="9" y1="3" x2="9" y2="21"></line>
+                      <line x1="15" y1="3" x2="15" y2="21"></line>
+                      <line x1="3" y1="9" x2="21" y2="9"></line>
+                      <line x1="3" y1="15" x2="21" y2="15"></line>
+                    </svg>
+                  </div>
+                  <div class="project-meta">SYSTEMS // 05</div>
+                </div>
+                <div class="project-body">
+                  <h3 class="project-title">Project Epsilon</h3>
+                  <p class="project-desc">A custom concurrent memory allocator leveraging thread-local caching structures to mitigate resource lock contention on highly parallel server processors.</p>
+                  <div class="project-tags">
+                    <span class="project-tag">C++26</span>
+                    <span class="project-tag">Concurrency</span>
+                    <span class="project-tag">Low-Level</span>
+                  </div>
+                </div>
+                <div class="project-footer">
+                  <a href="#" class="project-link" onclick="event.preventDefault();">
+                    View Blueprint
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <line x1="5" y1="12" x2="19" y2="12"></line>
+                      <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                  </a>
+                </div>
+              </article>
+
+              <!-- Project Card Zeta -->
+              <article class="project-card">
+                <div class="project-card-header">
+                  <div class="project-icon-wrapper">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <line x1="18" y1="20" x2="18" y2="10"></line>
+                      <line x1="12" y1="20" x2="12" y2="4"></line>
+                      <line x1="6" y1="20" x2="6" y2="14"></line>
+                    </svg>
+                  </div>
+                  <div class="project-meta">TELEMETRY // 06</div>
+                </div>
+                <div class="project-body">
+                  <h3 class="project-title">Project Zeta</h3>
+                  <p class="project-desc">A metrics ingestion and processing network streaming hub. Captures hardware telemetry with zero data drop-offs during massive cluster re-allocations.</p>
+                  <div class="project-tags">
+                    <span class="project-tag">Rust</span>
+                    <span class="project-tag">WebAssembly</span>
+                    <span class="project-tag">D3.js</span>
+                    <span class="project-tag">Telemetry</span>
+                  </div>
+                </div>
+                <div class="project-footer">
+                  <a href="#" class="project-link" onclick="event.preventDefault();">
+                    View Blueprint
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <line x1="5" y1="12" x2="19" y2="12"></line>
+                      <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                  </a>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Footer -->
+      <section id="contact" class="section">
+        <div class="section-header">
+          <span class="section-label">03 // SECURED NETWORK LINK</span>
+          <h2 class="section-title">Peer With Our Core</h2>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-info">
+            <p class="contact-lead">
+              Ready to construct resilient, high-performance systems together? Send our engineering cluster a secured protocol link message.
+            </p>
+            <div class="contact-methods">
+              <!-- Method Item 1 -->
+              <div class="contact-method">
+                <div class="contact-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </div>
+                <div>
+                  <div class="contact-label">Secure Mail Gate</div>
+                  <div class="contact-value">contact@noviumnodes.dev</div>
+                </div>
+              </div>
+              <!-- Method Item 2 -->
+              <div class="contact-method">
+                <div class="contact-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <line x1="2" y1="12" x2="22" y2="12"></line>
+                    <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                  </svg>
+                </div>
+                <div>
+                  <div class="contact-label">Core Registry Node</div>
+                  <div class="contact-value">London, UK Node // Active</div>
+                </div>
+              </div>
+              <!-- Method Item 3 -->
+              <div class="contact-method">
+                <div class="contact-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                    <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                  </svg>
+                </div>
+                <div>
+                  <div class="contact-label">PGP Public Fingerprint</div>
+                  <div class="contact-value font-mono" style="font-size: 0.8rem;">9FAF 82BC D223 91A2 4E23</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Interactive Dark Form -->
+          <form class="contact-form" id="contactForm">
+            <div class="form-group">
+              <label for="nameInput" class="form-label">PEER NAME</label>
+              <input type="text" id="nameInput" class="form-input" placeholder="e.g. Satoshi Nakamoto" required>
+            </div>
+            <div class="form-group">
+              <label for="emailInput" class="form-label">CONNECTION ADDR (EMAIL)</label>
+              <input type="email" id="emailInput" class="form-input" placeholder="e.g. s@nakamoto.org" required>
+            </div>
+            <div class="form-group">
+              <label for="subjectInput" class="form-label">PEERING NODE SUBJECT</label>
+              <input type="text" id="subjectInput" class="form-input" placeholder="e.g. Cluster Optimization" required>
+            </div>
+            <div class="form-group">
+              <label for="messageInput" class="form-label">TRANSMISSION PACKET (MESSAGE)</label>
+              <textarea id="messageInput" class="form-input" placeholder="Describe the system core optimization requirement or distributed model details..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-submit">
+              SECURE MESSAGE TRANSMIT
+            </button>
+            <div class="form-status" id="formStatus"></div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer Structure -->
+    <footer class="footer-bottom">
+      <div class="footer-container">
+        <div class="footer-copy">
+          &copy; 2026 NoviumNodes Inc. All Core Sockets Secured.
+        </div>
+        <ul class="social-links">
+          <li>
+            <a href="#" class="social-link" onclick="event.preventDefault();" aria-label="Github Socket Link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="social-link" onclick="event.preventDefault();" aria-label="X Network Socket Link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="social-link" onclick="event.preventDefault();" aria-label="LinkedIn Socket Link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
